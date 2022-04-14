@@ -114,7 +114,7 @@
                     },
                 title:
                     {
-                    text: 'WSB Portfolio'
+                    text: 'Dogs Portfolio'
                     },
                 xAxis: {
                     type: 'datetime',
@@ -130,7 +130,7 @@
                 series: [{
                     color : '#c23d23',
                     lineColor: '#303030',
-                    name: 'Temperature',
+                    name: 'Dogs Current Equity',
                     data: []
                 }]
             });
@@ -147,12 +147,11 @@
                     },
                 title:
                     {
-                        text: 'Humidity'
+                        text: 'WSB Portfolio'
                     },
                 xAxis: {
-                    type: 'linear',
-                    tickPixelInterval: 1500,
-                    maxZoom: 20 * 1000
+                    type: 'datetime',
+
                 },
                 yAxis: {
                     minPadding: 0.2,
@@ -165,7 +164,7 @@
                 series: [{
                     type: 'line',
                     lineColor: '#1d82b8',
-                    name: 'Humidity',
+                    name: 'WSB Current Equity',
                     data: []
                 }]
             });

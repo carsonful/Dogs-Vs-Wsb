@@ -1,6 +1,7 @@
 from flask import Flask,render_template,url_for,request,redirect, make_response
 import random
 import json
+from time import sleep
 from time import time
 from random import random
 from flask import Flask, render_template, make_response
@@ -20,8 +21,10 @@ def data():
     # Data Format
     # [TIME, Temperature, Humidity]
 
-    Temperature = portfolios.btcprice()
-    Humidity = random() * 55
+    sleep(150)
+
+    Temperature = portfolios.myround(portfolios.dogequity())
+    Humidity = portfolios.myround(portfolios.wsbequity())
 
     data = [time() * 1000, Temperature, Humidity]
 
