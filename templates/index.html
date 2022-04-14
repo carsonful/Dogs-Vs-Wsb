@@ -57,11 +57,14 @@
 
 
     <script>
+        function sleep(milliseconds) {  
+            return new Promise(resolve => setTimeout(resolve, milliseconds));  
         var chartTemperatue;
         var chartHumidity;
 
         function requestData()
-        {
+        {   
+            sleep(15000)
             // Ajax call to get the Data from Flask
             var requests = $.get('/data');
 
