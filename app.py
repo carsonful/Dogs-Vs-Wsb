@@ -16,7 +16,7 @@ def main():
     return render_template('index.html')
 
 
-@app.route('/data', methods=["GET", "POST"])
+@app.route('https://dogs-vs-wsb.herokuapp.com/data', methods=["GET", "POST"])
 def data():
     # Data Format
     # [TIME, Temperature, Humidity]
