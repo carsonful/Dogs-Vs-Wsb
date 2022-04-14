@@ -21,7 +21,8 @@ def data():
     # Data Format
     # [TIME, Temperature, Humidity]
 
-    sleep(150)
+    
+    #sleep(150)
 
     Temperature = portfolios.myround(portfolios.dogequity())
     Humidity = portfolios.myround(portfolios.wsbequity())
