@@ -63,7 +63,7 @@
         function requestData()
         {
             // Ajax call to get the Data from Flask
-            var requests = $.get('/data');
+            var requests = $.get('https://dogs-vs-wsb.herokuapp.com/data');
 
             var tm = requests.done(function (result)
             {
